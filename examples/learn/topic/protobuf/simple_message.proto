@@ -1,0 +1,13 @@
+// Copyright (c) 2019 The Felicia Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+syntax = "proto3";
+
+package felicia;
+
+message SimpleMessage {
+  uint64 id = 1;
+  int64 timestamp = 2;
+  string content = 3;
+}
