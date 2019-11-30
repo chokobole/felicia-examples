@@ -6,9 +6,6 @@
 
 namespace felicia {
 
-GrpcSimpleService::GrpcSimpleService(::grpc::ServerBuilder* builder)
-    : Service<grpc::SimpleService>(builder) {}
-
 void GrpcSimpleService::EnqueueRequests() {
   FEL_ENQUEUE_REQUEST(GrpcSimpleService, Add, false);
 }

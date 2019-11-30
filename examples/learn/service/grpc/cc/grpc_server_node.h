@@ -7,7 +7,6 @@
 
 #include "felicia/core/communication/service_server.h"
 #include "felicia/core/node/node_lifecycle.h"
-#include "felicia/core/rpc/service.h"
 
 #include "examples/learn/service/grpc/simple_service.grpc.pb.h"
 #include "examples/learn/service/simple_service_flag.h"
@@ -16,7 +15,7 @@ namespace felicia {
 
 class GrpcSimpleService : public rpc::Service<grpc::SimpleService> {
  public:
-  explicit GrpcSimpleService(::grpc::ServerBuilder* builder);
+  using rpc::Service<grpc::SimpleService>::Service;
 
  private:
   void EnqueueRequests() override;

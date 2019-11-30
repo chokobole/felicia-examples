@@ -7,7 +7,6 @@
 
 #include "felicia/core/communication/service_client.h"
 #include "felicia/core/node/node_lifecycle.h"
-#include "felicia/core/rpc/client.h"
 
 #include "examples/learn/service/grpc/simple_service.grpc.pb.h"
 #include "examples/learn/service/simple_service_flag.h"

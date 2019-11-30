@@ -45,7 +45,7 @@ def load_deps():
     git_repository(
         name = "com_github_chokobole_felicia",
         remote = "https://github.com/chokobole/felicia.git",
-        commit = "1615ff5a9f7ccd3e76d7b62c128da0b70c83aad2",
+        commit = "80dbb992529d8f2bbd059e477e0d6f09795fe359",
     )
 
     git_repository(
